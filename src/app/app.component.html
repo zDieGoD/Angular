@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li><a href="#welcome-section">Agenda-Contatos</a></li>
+            </ul>
+        </nav>
+
+        <section id="welcome-section" class="welcome-section">
+			
+            <form id="survey-form">
+				<h1>Agenda</h1>
+                <nav>
+                    <ul id="form-ul">
+                        <li><a routerLink="/users">Lista de Contatos</a></li>
+                        <li><a routerLink="/users/create">Criar Usuario</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <router-outlet></router-outlet>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>
+                &copy; Created by
+                <a>
+                    <a href="https://www.instagram.com/diego_silva48//" target="_blank">Diego Silva</a>
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>

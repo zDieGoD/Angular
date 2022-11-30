@@ -1,0 +1,21 @@
+<div id="listaContatos">
+    <h2>Atualizar Usuario</h2>
+
+    <div>
+        <form >
+            <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input type="text" placeholder="Insira o nome" [(ngModel)]="request.name">
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Sobrenome</label>
+                <input type="text" placeholder="Insira o Sobrenome" [(ngModel)]="request.last_name">
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Email</label>
+                <input type="text" placeholder="Insira o Email" [(ngModel)]="request.email">
+            </div>
+            <button class="submit-button" (click)="update()">Gravar</button>
+        </form>
+    </div>
+</div>

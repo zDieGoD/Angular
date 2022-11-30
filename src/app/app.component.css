@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f0f0f0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5c5c5c;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.8rem;
+}
+
+.nav-list a:hover {
+    transition: 0.5s ease-in;
+    background: #45567d;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+/*------------------------------------------------*/
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section p {
+    color: #080808;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+}
+
+form {
+    width: 700px;
+    height: 710px;
+    background: rgba(27, 27, 50);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.65rem;
+    display: block;
+    margin-top: 3.3em;
+    background:  rgba(56, 56, 58, 0.8);
+}
+
+#form-ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    font-weight: 300;
+    justify-content: space-evenly;
+    border-top: 0.4rem solid #ffffff;
+    background: #434344;
+    padding: 2rem;
+}
+
+foorter>p {
+    margin: 2rem;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer>p {
+        margin-bottom: 30px;
+    }
+}

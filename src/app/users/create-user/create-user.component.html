@@ -1,0 +1,25 @@
+<div id="listaContatos">
+    <h2>Criar Usuario</h2>
+
+    <div>
+        <form >
+            <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input type="text" placeholder="Insira o nome" [(ngModel)]="request.name">
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Sobrenome</label>
+                <input type="text" placeholder="Insira a profissao" [(ngModel)]="request.last_name">
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Email</label>
+                <input type="text" placeholder="Insira a profissao" [(ngModel)]="request.email">
+            </div>
+            <button class="submit-button" (click)="save()"><strong>Gravar</strong></button>
+        </form>
+    </div>
+
+    <div *ngIf="response">
+        <h4>Criado com Sucesso!</h4>
+    </div>
+</div>

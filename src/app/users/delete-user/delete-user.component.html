@@ -1,0 +1,18 @@
+<div id="listaContatos">
+    <h2>Remover Usuario</h2>
+
+    <div id="infUsuario">
+        <div *ngIf="user">
+            <label>Id: <strong> {{user.id}}</strong></label>
+            
+            <label>Primeiro: <strong> {{user.first_name}}</strong></label>
+            
+            <label>Sobrenome: <strong> {{user.last_name}}</strong></label>
+
+            <label>E-mail: <strong> {{user.email}}</strong></label>
+            
+            <button class="submit-button" (click)="delete()">Confirmar</button>
+            <button class="submit-button" (click)="cancel()">Cacelar</button>
+        </div>
+    </div>
+</div>
